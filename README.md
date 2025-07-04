@@ -131,4 +131,4 @@ text
 
 ## Support
 
-If you need help, contact me on Discord: [https://discord.gg/cpZpCUBfzV](https://discord.gg/cpZpCUBfzV)
+If you need help, contact me on Discord: [https://discord.gg/CpEHRGUyw6](https://discord.gg/CpEHRGUyw6)]
