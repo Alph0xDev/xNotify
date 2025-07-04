@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+    margin-top: 40vh;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.toast {
+    width: 180px; /* Larghezza leggermente ridotta */
+    margin-left: 95vw;
+}
+
+.wrapper {
+    width: 200px; /* Larghezza leggermente ridotta */
+    height: auto;
+    background-color: #0084ff69;
+    float: right;
+    border-radius: 7px; /* Bordo leggermente ridotto */
+}
+
+.main {
+    margin: 9px 12px; /* Margini leggermente ridotti */
+    position: relative;
+}
+
+/* Stile comune a tutte le notifiche */
+.success,
+.info,
+.warning,
+.error,
+.phonemessage,
+.neutral {
+    background: rgba(20, 20, 20, 0.85);
+    color: #fff;
+    padding: 8px; /* Padding leggermente ridotto */
+    border-radius: 4px; /* Bordo leggermente ridotto */
+    font-weight: 300;
+    word-spacing: 0.7px; /* Interlinea leggermente ridotta */
+    letter-spacing: 0.7px; /* Spaziatura lettere leggermente ridotta */
+    margin-bottom: 3px; /* Margine inferiore leggermente ridotto */
+    font-size: 0.9em; /* Dimensione testo leggermente ridotta */
+}
+
+/* Bagliori personalizzati per ogni tipo di notifica */
+.success {
+    box-shadow: 0 0 12px rgba(40, 167, 69, 0.8); /* Verde */
+}
+
+.info {
+    box-shadow: 0 0 12px rgba(23, 162, 184, 0.8); /* Blu chiaro */
+}
+
+.warning {
+    box-shadow: 0 0 12px rgba(255, 193, 7, 0.8); /* Giallo */
+}
+
+.error {
+    box-shadow: 0 0 12px rgba(220, 53, 69, 0.8); /* Rosso */
+}
+
+.phonemessage {
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.8); /* Blu intenso */
+}
+
+.neutral {
+    box-shadow: 0 0 12px rgba(229, 230, 231, 0.8); /* Grigio */
+}
