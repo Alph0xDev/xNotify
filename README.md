@@ -77,9 +77,6 @@ To add a new notification type, follow these steps:
 1. Define the CSS Style
 Open the styles.css file and add the following code block to the end of the file. Replace "example" with the name you want to give your new notification type.
 
-css
-Copia
-Modifica
 /* Example Notification (Replace "example" with your name) */
 .example {
     background-color: rgba(20, 20, 20, 0.85); /* Notification background */
@@ -100,9 +97,6 @@ border-radius: Set the border radius.
 2. Add the Logic in the Script
 Open the scripts.js file (or the JavaScript file that manages notifications) and add the following code block inside the function that handles notifications (likely within an existing if/else if block). Replace "example" with the name you chose for your new notification type.
 
-js
-Copia
-Modifica
 else if (event.data.type == 'example') { // Replace "example" with your name
     $(.title-${number}).html(event.data.title).css({
         "font-size": "16px",
