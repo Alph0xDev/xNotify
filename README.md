@@ -66,7 +66,7 @@ Here are the default notification types included in the script:
 *   `warning`: Warning notification (yellow).
 *   `error`: Error notification (red).
 *   `phone`: Phone notification (orange).
-*   `neutral`: Neutral notification (gray).
+*   `longtext`: Neutral notification (gray).
 
 ## Adding New Notification Types
 
