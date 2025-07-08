@@ -38,14 +38,8 @@ Displaying a Notification
 To display a notification, you can call the Alert function from either the client or the server.
 
 Client Side
-lua
-Copia
-Modifica
 exports['xNotify']:Alert("Title", "Message", Time, 'type')
 Server Side
-lua
-Copia
-Modifica
 TriggerClientEvent('xNotify:Alert', source, "Title", "Message", Time, 'type')
 Title: The title of the notification (string).
 
