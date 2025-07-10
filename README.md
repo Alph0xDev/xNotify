@@ -68,38 +68,41 @@ longtext: Neutral notification (gray).
 Adding New Notification Types
 To add a new notification type, follow these steps:
 
-1. Define the CSS Style
-Open the styles.css file and add the following code block to the end of the file. Replace "example" with the name you want to give your new notification type.
+1. Define the CSS Style  
+Open the `styles.css` file and add a new CSS class for your custom notification type.  
+Replace `mytype` with the name you want to use for your new notification type (for example: `promo`, `event`, ecc).
 
-/* Example Notification (Replace "example" with your name) */
-.example {
-    background-color: rgba(20, 20, 20, 0.85); /* Notification background */
-    color: #color_code; /* Text color */
-    padding: 5px;
-    border-radius: 5px; /* Rounded border */
+css
+
+.mytype {
+    background: rgba(20, 20, 20, 0.85); /* Notification background */
+    color: #fff;                        /* Text color */
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.8); /* Custom shadow color */
+    font-size: 0.9em;
+    margin-bottom: 3px;
 }
-.example: Defines the style of the notification box.
 
-background-color: Set the background color of the notification.
 
-color: Set the text color.
-
-padding: Set the internal padding.
-
-border-radius: Set the border radius.
+- .mytype: The class name for your custom notification.
+- background: Set the background color.
+- color: Set the text color.
+- box-shadow: Set the glow color for your notification.
+- You can copy and modify this example for each new type you want to add.
 
 2. Add the Logic in the Script
-Open the scripts.js file (or the JavaScript file that manages notifications) and add the following code block inside the function that handles notifications (likely within an existing if/else if block). Replace "example" with the name you chose for your new notification type.
+Open the scripts.js file (or the JavaScript file that manages notifications) and add the following code block inside the function that handles notifications (likely within an existing if/else if block). Replace "mytype" with the name you chose for your new notification type.
 
-else if (event.data.type == 'example') { // Replace "example" with your name
+else if (event.data.type == 'mytype') { // Replace "mytype" with your name
     $(.title-${number}).html(event.data.title).css({
         "font-size": "16px",
         "font-weight": "600"
     });
-    $(.wrapper-${number}).addClass('example'); // Add the main style class
+    $(.wrapper-${number}).addClass('mytype'); // Add the main style class
     sound.play();
 }
-Make sure to replace "example" with the name you chose for your new notification type.
+Make sure to replace "mytype" with the name you chose for your new notification type.
 
 This code adds the necessary CSS classes to apply the style defined in the styles.css file.
 
